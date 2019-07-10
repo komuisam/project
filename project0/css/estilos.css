@@ -1,89 +1,9 @@
-/*css normal*/
-
-/*body{
-
-	
-	font-size: 2em;
-	font-family: Monotype Corsiva;
-	background-size: 100%;
-	background-repeat: no-repeat;
-} 
-table { align-content:left;
-}
-header{
-	margin: 0;
-	background: #2E2EFE;	
-	color:#FE2E2E;
-	text-align: center; ;
-	position: 1em 0;
-	border-bottom: 5px solid #000;
-
-}
-nav{
-	text-align: center;
-	margin-top: 0.7em;
-}
-nav li{
-	display: inline-block;
-	list-style: none;
-}
-nav li a{
-	text-decoration: none;
-	background: #0489B1;
-	color: #fff;
-	border-radius: 3px;
-	padding: 0.6em 0.3em;
-	box-shadow: 5px 5px 5px #333;
-}
-nav li a:hover {
-	text-decoration: none;
-	background: #AAE9F8;
-	color: #fff;
-	border-radius: 3px;
-	padding: 0.6em 0.3em;
-}
-footer{
-	border-top: 3px solid #000;
-	background: #848484;
-	color:#FF0000;
-	text-align: center;
-	font-size: 0.7em;
-	padding: 1em 0;
-}
-section#contenido{
-	background: #fff;
-	padding: 1em ;
-	margin: 2em auto;
-	width: 80%;
-}
-input {
-	border-radius:5px;
- 
-}
-.tit{
-	align-content: flex-end; 
-}
-input, textarea{
-			border: 0;
-			outline: none;
-			width: 280px;
-		}
-		*/
-
-
-
-
-
 /* css del menu*/
 .navbar {
-	margin-top: 100px;
-  *position: relative;
-  *z-index: 2;
+	margin-top: 50px;
   margin-bottom: 20px;
   overflow: visible;
 }
-
-
 .container {
 
   margin-right: auto;
@@ -91,26 +11,15 @@ input, textarea{
   *zoom: 1;
   width: 940px;
 }
-.navbar .container {
-  width: auto;
-}
-
 .nav {
-  margin-bottom: 20px;
-  margin-left: 0;
   list-style: none;
 }
-
 .nav > li > a {
   display: block;
 }
-
-
-
 .nav > .pull-right {
   float: right;
 }
-
 .navbar-inner {
 	 display: table;
   min-height: 40px;
@@ -154,7 +63,7 @@ input, textarea{
 }
 .navbar .nav > li > a:focus,
 .navbar .nav > li > a:hover {
-  color: #333333;
+  color: red;
   text-decoration: none;
   background-color: transparent;
 }
@@ -166,19 +75,16 @@ td {
     vertical-align: inherit;
 }
 body {
-    margin: 30px;
-    font-family: -webkit-body;
-    font-size: 14px;
+  
+
+  font-family: Monotype Corsiva;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 100%;
+    margin: 32px;
+    font-size: 16px;
     line-height: 20px;
-    color: #333;
-    background-color: #fff;
-}
-body {
-   
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 14px;
-    line-height: 20px;
-    color: #62c462
+    color: #62c462;
     background-color: #fff;
 }
 .table th, .table td {
@@ -204,4 +110,7 @@ table {
 
 .table tbody tr.success td {
     background-color: #dff0d8;
+}
+fieldset{
+  border-radius: 10%;
 }

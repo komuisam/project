@@ -12,7 +12,7 @@ if (@!$_SESSION['user']) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
-    <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+       <link rel="stylesheet" type="text/css" href="../css/estilos.css">
   </head>
 <body data-offset="40" background="images/fondotot.jpg" style="background-attachment: fixed">
 <div class="container">
@@ -33,7 +33,7 @@ if (@!$_SESSION['user']) {
 	<div class="container">
 	  <div class="nav-collapse">
 		<ul class="nav">
-			<li class=""><a href="admin.php">principal</a></li>	 
+			<li class=""><a href="../admin.php">principal</a></li>	 
 			</ul>
 		<form action="#" class="navbar-search form-inline" style="margin-top:6px">		
 		</form>
@@ -76,10 +76,9 @@ if (@!$_SESSION['user']) {
 		    	$email=$row[4];
 		    	$adpass=$row[5];
 		    	$pais=$row[6];
-
 		    }
 		?>
-		<form action="model/ejecutaactualizar.php" method="post">
+		<form action="../model/ejecutaactualizar.php" method="post">
 				Id<br><input type="text" name="id" value= "<?php echo $id ?>" readonly="readonly"><br>
 				Usuario<br> <input type="text" name="user" value="<?php echo $user?>"><br>
 				apellido<br> <input type="text" name="apellido" value="<?php echo $apellido?>"><br>

@@ -11,16 +11,16 @@
 	<table border="0" align="left" valign="middle">
 		<tr>
 		<td rowspan=2>
-		<form action="model/validar.php" method="post">
+		<form action="controller/validar.php" method="post">
 
 			<table border="0">
 
 			<tr><td><label style="font-size: 14pt"><b>  Correo: </b></label></td>
-				<td width=80> <input class="form-group has-success" style="border-radius:15px;" type="text" name="mail"placeholder=" Correo" ></td></tr>
+				<td width=80> <input  style="border-radius:15px;" type="text" name="mail"placeholder=" Correo" ></td></tr>
 			<tr><td><label style="font-size: 14pt"><b>  Contraseña: </b></label></td>
 				<td witdh=80><input style="border-radius:15px;" type="password" name="pass" placeholder=" contraseña"></td></tr>
 			<tr><td></td>
-				<td width=80 align=left><input class="btn btn-primary" type="submit" value="Aceptar"></td>
+				<td width=80 align=left><input type="submit" value="Aceptar"></td>
 				</tr></tr></table>
 		</form>
 <br>
@@ -80,6 +80,7 @@
 		</table>
 		</div></center></div></center>
 <?php
+	require("conect/connect_db.php");
 		include("include/mostrar.php");
 	?>
 	

@@ -1,6 +1,6 @@
+
+   <link rel="stylesheet" type="text/css" href="../css/estilos.css">
 <div >
-
-
 <?php
 		extract($_GET);
 		require("../conect/connect_db.php");
@@ -12,8 +12,6 @@ $sql=("SELECT * FROM `publicaciones` WHERE id=$id");
 		    	$id=$row[0];
 		    	$titulo=$row[2];
 		    	$texto=$row[3];
-		    	
-
 		    }	
 			?>
 			<form action="../model/ejetutareditarp.php" method="post">
@@ -23,7 +21,7 @@ $sql=("SELECT * FROM `publicaciones` WHERE id=$id");
     <textarea name="texto" id="comentario" rows="10" cols="50"><?php echo $texto?></textarea>
 				<br>
 				<input type="submit" value="Guardar" class="btn btn-success btn-primary">
-				<a href="../index2.php">cancelar</a>
+				<a href="index2.php">cancelar</a>
 			</form>
 		</div>
 

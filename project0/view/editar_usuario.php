@@ -9,7 +9,7 @@
 <html>
 <head>
 	<title>modificar usuario</title>
-	 <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+	 <link rel="stylesheet" type="text/css" href="../css/estilos.css">
 </head>
 <body>
 	<div class="container">

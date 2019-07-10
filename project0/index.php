@@ -79,7 +79,7 @@
 		</tr>
 		</table>
 		</div></center></div></center>
-<?php
+    <?php
 	require("conect/connect_db.php");
 		include("include/mostrar.php");
 	?>

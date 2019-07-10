@@ -1,13 +1,8 @@
 <div class="motrar">
 <h2>publicaciones</h2>
 <?php
-if (empty($_SESSION['id'])||($_SESSION['rol']==1)) {
-	$sql=("SELECT * FROM `publicaciones`ORDER BY `id` DESC");
-}else{
-	$x= $_SESSION['id'];
-			$sql=("SELECT * FROM `publicaciones` WHERE `usuario_id` = $x ORDER BY `id` DESC");
-}	
-			
+	
+		$sql=("SELECT * FROM `publicaciones`ORDER BY `id` DESC");	
 //la variable  $mysqli viene de connect_db que lo traigo con el require("connect_db.php");
 				$query=mysqli_query($mysqli,$sql);
 				echo "<table border='1'; class='table table-hover';>";
@@ -27,6 +22,7 @@ if (empty($_SESSION['id'])||($_SESSION['rol']==1)) {
 				    	echo "<td >$arreglo[3]</td>";
 				    	if (!empty($_SESSION['id'])) {
 				    		if ($_SESSION['rol']==2) {
+				    			if($_SESSION['id']==$arreglo[1]) {
 				    			echo "<tr></tr>";
 				    	echo "<td><button><a href='editarp.php?id=$arreglo[0]'>editar</a></button> 
 				    	<button><a href='index2.php? id=$arreglo[0]&idborrar=3'>borrar</a></button> </td>";
@@ -34,7 +30,7 @@ if (empty($_SESSION['id'])||($_SESSION['rol']==1)) {
 				    	echo "<tr></tr>";
 				    	echo "<td> 
 				    	<button><a href='admin.php? id=$arreglo[0]&idborrar=3'>borrar</a></button> </td>";
-				    }}
+				    }}}
 					}
 				}
 				

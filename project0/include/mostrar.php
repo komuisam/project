@@ -26,11 +26,12 @@
 				    			echo "<tr></tr>";
 				    	echo "<td><button><a href='editarp.php?id=$arreglo[0]'>editar</a></button> 
 				    	<button><a href='index2.php? id=$arreglo[0]&idborrar=3'>borrar</a></button> </td>";
-				    } else {if ($_SESSION['rol']==1) {
+				    }} else {
+				    	if ($_SESSION['rol']==1) {
 				    	echo "<tr></tr>";
 				    	echo "<td> 
 				    	<button><a href='admin.php? id=$arreglo[0]&idborrar=3'>borrar</a></button> </td>";
-				    }}}
+				    }}
 					}
 				}
 				
